@@ -1,19 +1,6 @@
-number = 1 
+counter = 100
 
-100.times do 
-  if number == 5 
-  	puts "MinedMinds"
-  elsif number == 50
-  	puts "Fifty"
-  elsif number == 75
-  	puts "Seventy-five"
-  else
-
-  	
-  puts number 
-  end
-
-
-  number = number + 1 
-	
+while counter >= 1 do  
+  p counter
+  counter -= 1
 end
