@@ -1,6 +1,11 @@
-counter = 1
+counter = 100
 
-while counter <= 100 do  
-  p counter
-  counter += 1
+while counter >= 1 do  
+   if counter.even? ==true
+   	p "even"
+   else
+   	p counter
+   end
+counter -= 1	   
+  
 end
