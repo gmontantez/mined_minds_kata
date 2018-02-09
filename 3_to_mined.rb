@@ -1,6 +1,10 @@
 counter = 1
 
 while counter <= 100 do
- 	p counter
+ 	if counter == 3
+ 		p "mined"
+ 	else 
+ 		p counter
+ 	end
  	counter = counter +1
 end
