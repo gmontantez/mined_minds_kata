@@ -1,3 +1,9 @@
 for x in 1..100
-	p x
+	
+	if x == 3
+		p "mined"
+	else 
+		p x 
+ 	end
+
 end
