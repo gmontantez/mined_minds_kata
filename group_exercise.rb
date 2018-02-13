@@ -1,7 +1,8 @@
 for x in 1..100
 	
-	if x == 3
+	if x % 3 == 0
 		p "mined"
+	
 	else 
 		p x 
  	end
