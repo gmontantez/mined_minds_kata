@@ -21,6 +21,11 @@ class Combined_counter_work_test < Minitest::Test
 	def test_divisible_by_3_and_5_returns_mined_mines
 		assert_equal("mined_minds",minedminds(15))
 	end
+	def test_8_equals_8
+		assert_equal(8,minedminds(8))
+	end
+	def test_11_returns_11
+		assert_equal(11,minedminds(11))
 
 end
 
