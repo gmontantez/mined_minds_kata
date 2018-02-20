@@ -26,6 +26,7 @@ class Combined_counter_work_test < Minitest::Test
 	end
 	def test_11_returns_11
 		assert_equal(11,minedminds(11))
+	end
 
 end
 
