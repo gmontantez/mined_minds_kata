@@ -11,8 +11,9 @@ def minedminds(x)
 end
 counter = 1
 array = Array.new
-
-100.times do
+puts "What number would you like to use?"
+number = gets.chomp.to_i
+number.times do
 	result = minedminds(counter)
 	array.push(result)
 
