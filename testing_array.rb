@@ -26,6 +26,9 @@ class Test_array < Minitest::Test
 	def test_7_returns_7
 		assert_equal(7,minedminds(7))
 	end
-
-
+	def test_function
+		set = function()
+		assert_equal(Array, set.class)
+	end
+		
 end
