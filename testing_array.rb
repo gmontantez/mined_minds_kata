@@ -17,5 +17,9 @@ class Test_array < Minitest::Test
 	def test_15_returns_mined_minds
 		assert_equal("mined_minds",minedminds(15))
 	end
+	def test_9_returns_mined
+		assert_equal("mined",minedminds(9))
+	end
+	
 
 end
