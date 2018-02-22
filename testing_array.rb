@@ -23,6 +23,9 @@ class Test_array < Minitest::Test
 	def test_20_returns_minds
 		assert_equal("minds",minedminds(20))
 	end
+	def test_7_returns_7
+		assert_equal(7,minedminds(7))
+	end
 
 
 end
