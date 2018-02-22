@@ -9,6 +9,7 @@ def minedminds(x)
 		return x
 	end
 end
+
 counter = 1
 array = Array.new
 
