@@ -11,9 +11,8 @@ def minedminds(x)
 end
 counter = 1
 array = Array.new
-puts "What number would you like to use?"
-number = gets.chomp.to_i
-number.times do
+
+100.times do
 	result = minedminds(counter)
 	array.push(result)
 
