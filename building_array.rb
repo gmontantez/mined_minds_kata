@@ -1,7 +1,8 @@
 def array
-	arr = []
+	Array (1..100)
 end
 
+ 
 print array
 
 
