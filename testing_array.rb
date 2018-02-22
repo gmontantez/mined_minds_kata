@@ -20,6 +20,9 @@ class Test_array < Minitest::Test
 	def test_9_returns_mined
 		assert_equal("mined",minedminds(9))
 	end
-	
+	def test_20_returns_minds
+		assert_equal("minds",minedminds(20))
+	end
+
 
 end
