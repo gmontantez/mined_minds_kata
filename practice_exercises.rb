@@ -9,5 +9,3 @@ def minedminds()
 end
 
 p minedminds()
-
-
