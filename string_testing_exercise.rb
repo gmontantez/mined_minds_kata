@@ -9,22 +9,30 @@ class Addition_test < Minitest::Test
 	def test_integer
 		num1 = "1"
 		num2 = "1"
-		number = off_by_one(num1, num2)
+		number = string(num1, num2)
 		assert_equal(1, number)
 	end
 	def test_four_numbers
 		num1 = "1234"
 		num2 = "1234"
-		number = off_by_one(num1, num2)
+		number = string(num1, num2)
 		assert_equal(4, number)
 	end
-#	def test_two_numbers
-#		num1 = "2459"
-#		num2 = "2468"
-#		number = off_by_one(num1, num2)
-#		assert_equal(2, number)
-#	end
-#end
+	def test_two_numbers
+		num1 = "2459"
+		num2 = "2468"
+		number = string(my_ticket, winning_array)
+		assert_equal(2, number)
+	end
+	
+	# def test_winning_returns_4
+	# 	my_ticket = "1234"
+	# 	winning_array = ["1234","1235"]
+	# 	number = off_by_one(my_ticket, winning_array)
+	# 	assert_equal(["1235"], number)
+	# end
+
+end
 	#def test_integer
 	#	num1 = "1234"
 	#	num2 = "1234"
@@ -40,4 +48,4 @@ class Addition_test < Minitest::Test
 	#	number_test = off_by_one(num1, num2)
 	#	assert_equal(true, number_test)
 	#end
-end
+
