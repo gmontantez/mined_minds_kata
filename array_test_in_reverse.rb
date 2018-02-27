@@ -3,8 +3,8 @@ def minedminds(num)
 		return "mined_minds"
 	elsif num % 3 == 0
 		return "mined"
-	#elsif num % 5 == 0
-		#return "minds"
+	elsif num % 5 == 0
+		return "minds"
 	else
 		return num
 	end
