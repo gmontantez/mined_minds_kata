@@ -37,4 +37,11 @@ class Addition_test < Minitest::Test
 		number = off_by_one(my_ticket, winning_array)
 		assert_equal(["1235"], number)
 	end
+	def test_another_one_off_by_one
+		my_ticket = "1234"
+		winning_array = ["5447", "1235", "7998","7234"]
+		number = off_by_one(my_ticket, winning_array)
+		assert_equal(["1235","7234"], number)
+	end
+
 end
