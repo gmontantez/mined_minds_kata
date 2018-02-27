@@ -18,12 +18,12 @@ class Addition_test < Minitest::Test
 		number = off_by_one(num1, num2)
 		assert_equal(4, number)
 	end
-	def test_four_numbers
-		num1 = "2459"
-		num2 = "2468"
-		number = off_by_one(num1, num2)
-		assert_equal(2, number)
-	end
+#	def test_two_numbers
+#		num1 = "2459"
+#		num2 = "2468"
+#		number = off_by_one(num1, num2)
+#		assert_equal(2, number)
+#	end
 #end
 	#def test_integer
 	#	num1 = "1234"
