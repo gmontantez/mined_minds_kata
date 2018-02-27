@@ -26,7 +26,7 @@ def off_by_one(my_ticket, winning_array)
 	
 	close_array = []
 	winning_array.each do |element|
-		if string(my_ticket, element) == 3
+		if string(my_ticket, element) == 2
 		close_array.push(element)
 		end
 

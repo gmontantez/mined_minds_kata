@@ -25,23 +25,36 @@ class Addition_test < Minitest::Test
 		assert_equal(2, number)
 	end
 
-	def test_winning_returns_2
+	# def test_winning_returns_2
+	# 	my_ticket = "1234"
+	# 	winning_array = ["1234","1239"]
+	# 	number = off_by_one(my_ticket, winning_array)
+	# 	assert_equal(["1239"], number)
+	#end
+	# def test_one_off_by_one
+	# 	my_ticket = "1234"
+	# 	winning_array = ["5447", "1235", "7998"]
+	# 	number = off_by_one(my_ticket, winning_array)
+	# 	assert_equal(["1235"], number)
+	#end
+	# def test_another_one_off_by_one
+	# 	my_ticket = "1234"
+	# 	winning_array = ["5447", "1235", "7998","7234"]
+	# 	number = off_by_one(my_ticket, winning_array)
+	# 	assert_equal(["1235","7234"], number)
+	#end
+	def test_one_off_by_two
 		my_ticket = "1234"
-		winning_array = ["1234","1239"]
+		winning_array = ["5447", "1235", "7998","7234","9534"]
 		number = off_by_one(my_ticket, winning_array)
-		assert_equal(["1239"], number)
+		assert_equal(["9534"], number)
 	end
-	def test_one_off_by_one
-		my_ticket = "1234"
-		winning_array = ["5447", "1235", "7998"]
-		number = off_by_one(my_ticket, winning_array)
-		assert_equal(["1235"], number)
-	end
-	def test_another_one_off_by_one
-		my_ticket = "1234"
-		winning_array = ["5447", "1235", "7998","7234"]
-		number = off_by_one(my_ticket, winning_array)
-		assert_equal(["1235","7234"], number)
-	end
+	# def test_one_off_by_one_again
+	# 	my_ticket = "1234"
+	# 	winning_array = ["4621","1734","1238","5892","2378"]
+	# 	number = off_by_one(my_ticket, winning_array)
+	# 	assert_equal(["1734","1238"], number)
+	# end
+
 
 end
