@@ -73,9 +73,15 @@ class Addition_test < Minitest::Test
 	# 	number = off_by_one(my_ticket, winning_array)
 	# 	assert_equal(["123456"], number)
 	# end
-	def test_winning_ticket_with_letter
+	# def test_winning_ticket_with_letter
+	# 	my_ticket = "123a456"
+	# 	winning_array = ["4621","17346","1238","5892","2378","12345","1234","123a456"]
+	# 	number = off_by_one(my_ticket, winning_array)
+	# 	assert_equal(["123a456"], number)
+	# end
+	def test_winning_ticket_with_word
 		my_ticket = "123a456"
-		winning_array = ["4621","17346","1238","5892","2378","12345","1234","123a456"]
+		winning_array = ["4621","17346","nonsense","1238","5892","2378","12345","1234","123a456"]
 		number = off_by_one(my_ticket, winning_array)
 		assert_equal(["123a456"], number)
 	end
