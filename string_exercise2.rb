@@ -26,9 +26,11 @@ def off_by_one(my_ticket, winning_array)
 	
 	close_array = []
 	winning_array.each do |element|
-		if string(my_ticket, element) == my_ticket.length
-		close_array.push(element)
- 		end
+		if element.length == my_ticket.length
+			if string(my_ticket, element) == my_ticket.length
+			close_array.push(element)
+			end
+		end
  	end
 	close_array
 end 
