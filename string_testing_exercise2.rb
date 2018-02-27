@@ -30,25 +30,25 @@ class Addition_test < Minitest::Test
 	# 	winning_array = ["1234","1239"]
 	# 	number = off_by_one(my_ticket, winning_array)
 	# 	assert_equal(["1239"], number)
-	#end
+	# end
 	# def test_one_off_by_one
 	# 	my_ticket = "1234"
 	# 	winning_array = ["5447", "1235", "7998"]
 	# 	number = off_by_one(my_ticket, winning_array)
 	# 	assert_equal(["1235"], number)
-	#end
+	# end
 	# def test_another_one_off_by_one
 	# 	my_ticket = "1234"
 	# 	winning_array = ["5447", "1235", "7998","7234"]
 	# 	number = off_by_one(my_ticket, winning_array)
 	# 	assert_equal(["1235","7234"], number)
-	#end
+	# end
 	# def test_one_off_by_two
 	# 	my_ticket = "1234"
 	# 	winning_array = ["5447", "1235", "7998","7234","9534"]
 	# 	number = off_by_one(my_ticket, winning_array)
 	# 	assert_equal(["9534"], number)
-	#end
+	# end
 	# def test_one_off_by_one_again
 	# 	my_ticket = "1234"
 	# 	winning_array = ["4621","1734","1238","5892","2378"]
@@ -67,11 +67,17 @@ class Addition_test < Minitest::Test
 	# 	number = off_by_one(my_ticket, winning_array)
 	# 	assert_equal(["1234"], number)
 	# end
-	def test_winning_ticket_six_digits
-		my_ticket = "123456"
-		winning_array = ["4621","17346","1238","5892","2378","12345","1234","123456"]
+	# def test_winning_ticket_six_digits
+	# 	my_ticket = "123456"
+	# 	winning_array = ["4621","17346","1238","5892","2378","12345","1234","123456"]
+	# 	number = off_by_one(my_ticket, winning_array)
+	# 	assert_equal(["123456"], number)
+	# end
+	def test_winning_ticket_with_letter
+		my_ticket = "123a456"
+		winning_array = ["4621","17346","1238","5892","2378","12345","1234","123a456"]
 		number = off_by_one(my_ticket, winning_array)
-		assert_equal(["123456"], number)
+		assert_equal(["123a456"], number)
 	end
 
 
