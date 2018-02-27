@@ -24,7 +24,7 @@ end
  
 array = function()
 
-print array
+# print array
 
 
 

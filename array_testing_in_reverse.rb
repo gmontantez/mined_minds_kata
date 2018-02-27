@@ -5,8 +5,8 @@ class Test_array < Minitest::Test
 	def test_true
 		assert_equal(true,true)
 	end
-	def test_7_return_7
-		assert_equal(7,mindminds(7))
+	def test_7_returns_7
+		assert_equal(7,minedminds(7))
 	end
 	
 end
