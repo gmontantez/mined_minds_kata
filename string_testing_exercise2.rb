@@ -61,11 +61,17 @@ class Addition_test < Minitest::Test
 	# 	number = off_by_one(my_ticket, winning_array)
 	# 	assert_equal(["12345"], number)
 	# end
-	def test_winning_tickets
-		my_ticket = "1234"
-		winning_array = ["4621","17346","1238","5892","2378","12345","1234"]
+	# def test_winning_tickets
+	# 	my_ticket = "1234"
+	# 	winning_array = ["4621","17346","1238","5892","2378","12345","1234"]
+	# 	number = off_by_one(my_ticket, winning_array)
+	# 	assert_equal(["1234"], number)
+	# end
+	def test_winning_ticket_six_digits
+		my_ticket = "123456"
+		winning_array = ["4621","17346","1238","5892","2378","12345","1234","123456"]
 		number = off_by_one(my_ticket, winning_array)
-		assert_equal(["1234"], number)
+		assert_equal(["123456"], number)
 	end
 
 
