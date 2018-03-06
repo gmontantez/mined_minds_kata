@@ -11,15 +11,10 @@ class Addition_test < Minitest::Test
 		print sample(["Aaron", "Anna", "Gail", "Gabrielle", "Scott", "Rob","Ashley"], 1) 
 	end
 
-	# def test_3_names_out_of_7_names
-	# 	assert_equal(3, sample(["Aaron", "Anna", "Gail", "Gabrielle", "Scott", "Rob","Ashley"], 2).count)
-	# 	print sample(["Aaron", "Anna", "Gail", "Gabrielle", "Scott", "Rob","Ashley"], 2) 
-	# end
-
-	# def test_4_names_out_of_7_names
-	# 	assert_equal(4, sample(["Aaron", "Anna", "Gail", "Gabrielle", "Scott", "Rob","Ashley"], 3).count)
-	# 	print sample(["Aaron", "Anna", "Gail", "Gabrielle", "Scott", "Rob","Ashley"], 3) 
-	# end
+	def test_4_names_out_of_7_names
+		assert_equal(4, sample(["Aaron", "Anna", "Gail", "Gabrielle", "Scott", "Rob","Ashley"], 3).count)
+		print sample(["Aaron", "Anna", "Gail", "Gabrielle", "Scott", "Rob","Ashley"], 3) 
+	end
 
 
 	# def test_3_pairs_out_of_6
