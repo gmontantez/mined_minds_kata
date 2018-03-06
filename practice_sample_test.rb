@@ -19,13 +19,13 @@ class Addition_test < Minitest::Test
 
 	def test_3_pairs_out_of_6
 		assert_equal(3, sample(["Aaron", "Anna", "Gail", "Gabrielle", "Scott", "Rob"], 6).count)
-		print sample(["Aaron", "Anna", "Gail", "Gabrielle", "Scott", "Rob"], 6) 
+		#print sample(["Aaron", "Anna", "Gail", "Gabrielle", "Scott", "Rob"], 6) 
 	end
 
-	# def test_3_sets_out_of_7
-	# 	assert_equal(3, sample(["Aaron", "Anna", "Gail", "Gabrielle", "Scott", "Rob", "Ashley"], 7).count)
-	# 	#print sample(["Aaron", "Anna", "Gail", "Gabrielle", "Scott", "Rob", "Ashley"], 7) 
-	# end
+	def test_3_sets_out_of_7
+		assert_equal(3, sample(["Aaron", "Anna", "Gail", "Gabrielle", "Scott", "Rob", "Ashley"], 7).count)
+		print sample(["Aaron", "Anna", "Gail", "Gabrielle", "Scott", "Rob", "Ashley"], 7) 
+	end
 
 	# def test_4_pairs_out_of_8
 	# 	assert_equal(4, sample(["Aaron", "Anna", "Gail", "Gabrielle", "Scott", "Rob", "Ashley","Lena"], 8).count)
