@@ -6,21 +6,21 @@ class Addition_test < Minitest::Test
 		assert_equal(true,true)
 	end
 
-	def test_2_names_out_of_7_names
-		assert_equal(2, sample(["Aaron", "Anna", "Gail", "Gabrielle", "Scott", "Rob","Ashley"], 1).count)
-		print sample(["Aaron", "Anna", "Gail", "Gabrielle", "Scott", "Rob","Ashley"], 1) 
-	end
-
-	def test_4_names_out_of_7_names
-		assert_equal(4, sample(["Aaron", "Anna", "Gail", "Gabrielle", "Scott", "Rob","Ashley"], 3).count)
-		print sample(["Aaron", "Anna", "Gail", "Gabrielle", "Scott", "Rob","Ashley"], 3) 
-	end
-
-
-	# def test_3_pairs_out_of_6
-	# 	assert_equal(3, sample(["Aaron", "Anna", "Gail", "Gabrielle", "Scott", "Rob"], 6).count)
-	# 	#print sample(["Aaron", "Anna", "Gail", "Gabrielle", "Scott", "Rob"], 6) 
+	# def test_2_names_out_of_7_names
+	# 	assert_equal(2, sample(["Aaron", "Anna", "Gail", "Gabrielle", "Scott", "Rob","Ashley"], 1).count)
+	# 	print sample(["Aaron", "Anna", "Gail", "Gabrielle", "Scott", "Rob","Ashley"], 1) 
 	# end
+
+	# def test_4_names_out_of_7_names
+	# 	assert_equal(4, sample(["Aaron", "Anna", "Gail", "Gabrielle", "Scott", "Rob","Ashley"], 3).count)
+	# 	print sample(["Aaron", "Anna", "Gail", "Gabrielle", "Scott", "Rob","Ashley"], 3) 
+	# end
+
+
+	def test_3_pairs_out_of_6
+		assert_equal(3, sample(["Aaron", "Anna", "Gail", "Gabrielle", "Scott", "Rob"], 6).count)
+		print sample(["Aaron", "Anna", "Gail", "Gabrielle", "Scott", "Rob"], 6) 
+	end
 
 	# def test_3_sets_out_of_7
 	# 	assert_equal(3, sample(["Aaron", "Anna", "Gail", "Gabrielle", "Scott", "Rob", "Ashley"], 7).count)
